@@ -1,0 +1,153 @@
+/* Header */
+.header-container {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	background-color: #d9d9d97c;
+	width: 100%;
+	height: 5rem;
+}
+
+#shopping-cart {
+	height: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+	position: relative;
+}
+
+#cart-count {
+	font-size: 18px;
+	font-weight: bold;
+	background: var(--color-white);
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.shopping-cart-icon {
+	width: 50px;
+}
+
+/* Main */
+.main-container {
+	margin: 130px 20px 20px 20px;
+}
+
+.title {
+	border-bottom: 1px solid var(--color-gray);
+	margin-bottom: 30px;
+}
+
+/* Product list*/
+#product-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	width: calc(33.33% - 20px);
+	background-color: var(--color-white);
+	box-shadow: 0px 0px 10px #ccc;
+	margin: 10px;
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.product-image {
+	width: 100%;
+	height: 500px;
+}
+
+.product-title {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.product-price {
+	color: green;
+	margin-top: 10px;
+}
+
+/* Shopping cart*/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: var(--color-white);
+	margin: 15% auto;
+	padding: 20px;
+	width: 80%;
+	box-shadow: 0px 0px 10px #ccc;
+	display: flex;
+	flex-direction: column;
+}
+
+#close-cart-list {
+	color: #aaa;
+	font-size: 34px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: right;
+	padding-right: 20px;
+}
+
+#cart-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cart-item {
+	display: flex;
+	margin-top: 20px;
+}
+
+.cart-item-image {
+	width: 5%;
+	height: 100px;
+}
+
+.cart-item-title {
+	font-weight: bold;
+	margin: auto 0;
+	padding-left: 30px;
+	width: 50%;
+}
+
+.cart-item-price {
+	color: green;
+	margin: auto 0;
+	width: 20%;
+}
+
+.cart-item-quantity {
+	width: 20%;
+	margin: auto 0;
+}
+
+.delete-button {
+	background-color: red;
+	color: var(--color-white);
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	width: 5%;
+}

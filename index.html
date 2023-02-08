@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EC site</title>
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/global.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style.css" />
+	</head>
+	<body>
+		<header class="header-container">
+			<div id="shopping-cart">
+				<span id="cart-count">0</span>
+				<img class="shopping-cart-icon" src="./image/shopping-cart.png" alt="Shopping Cart" />
+			</div>
+		</header>
+
+		<main class="main-container">
+			<h1 class="title">Recommend for you</h1>
+			<div id="product-container"></div>
+			<div id="cart-list" class="modal">
+				<div class="modal-content">
+					<span id="close-cart-list">&times;</span>
+					<ul id="cart-items"></ul>
+				</div>
+			</div>
+		</main>
+		<script src="./script/index.js"></script>
+	</body>
+</html>
